@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumTo(num){
+            /***** approach 1 ******/
+            // let sum=0;
+            // for(let i=0 ; i <= num; i++){
+            //     sum += i
+            // }
+            // return sum
+
+            /***** approach 2 ******/
+            if(num == 1)
+                return 1;
+            else
+                return  num + sumTo(num-1);  
+            
+
+            /***** approach 3 ********/
+            //return n * (n + 1) / 2;
+        }
+        // alert(sumTo(100));
+
+
+
+        function factorial(num){
+            if(num == 1){
+                return 1;
+            }
+            else{
+                return num*factorial(num-1);
+            }
+        }
+        alert(factorial(5));
+
+
+
+
+        function fib(n) {
+            return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+        }
+
+        alert( fib(5) ); 
+        alert( fib(7) );
+
+
+    </script>
+</body>
+</html>

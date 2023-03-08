@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script>
+    let url = new URL("https://google.com/search");
+    url.searchParams.set('q', 'this is test!');
+
+    alert(url);
+
+    url.searchParams.set('p', 'ab:cd,rd');
+    alert(url); 
+
+    for(let [name, value] of url.searchParams) {
+        console.log(`${name}=${value}`); 
+    }
+
+    let music = encodeURI('Rock&Roll');
+
+    let url1 = `https://google.com/search?q=${music}`;
+    alert(url1);
+</script>

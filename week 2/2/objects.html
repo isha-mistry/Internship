@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user={
+        //     name : "John",
+        //     age: 30,
+        // }
+        // alert(user.name);
+        // delete user.age;
+        // alert(user.age);
+
+        let user={}
+        user.name = "John",
+        user.surname= "Smith",
+        user.name = "Pete"
+        alert(user.name);
+        delete user.name;
+        // alert(user.age);
+
+
+        /************************************************/
+        function isEmpty(obj) {
+            for (let key in obj) {
+                // if the loop has started, there is a property
+                return false;
+            }
+            return true;
+        }
+
+        let schedule = {};
+        alert( isEmpty(schedule) ); // true
+        schedule["8:30"] = "get up";
+        alert( isEmpty(schedule) ); // false
+
+
+        /*********************************************/
+
+        let salaries = {
+            John: 100,
+            Ann: 160,
+            Pete: 130
+        }
+
+        let sum=0;
+        for(let key in salaries){
+            sum += salaries[key]
+        }
+        alert(sum);
+
+        let menu = {
+            width: 200,
+            height: 300,
+            title: "My menu"
+        };
+
+        function multiplyNumeric(ob){
+            for(let keys in ob){
+                if (typeof ob[keys] == "number")
+                ob[key] *= 2;
+            }
+        }
+        alert(multiplyNumeric(menu));
+
+
+
+    </script>
+</body>
+</html>

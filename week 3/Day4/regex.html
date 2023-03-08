@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "Hello.. hello, good morning";
+
+        console.log( str.match(/hello/gi) );
+
+        console.log( "We will, we will".replace(/we/i, "I") );
+        console.log( "We will, we will".replace(/we/ig, "I") );
+
+        console.log( "I love HTML".replace(/HTML/, "$& and JavaScript") );
+
+        //////////////////////////////////
+
+        let str1 = "I love JavaScript";
+        let regex = /LOVE/i;
+        alert( regex.test(str1) );
+
+        //////////////////////////////////
+        let str2 = "+7(903)-123-45-67";
+        let regexp = /\d/g;
+
+        alert( str.match(regexp) ); 
+        alert( str2.match(regexp).join('') );
+
+        /////////////////////////// 
+        /* \s = space  \S = not space
+        \w = word      \W = not word
+        \d = digit     \D = not digit 
+        . = special character class that matches “any character except a newline”. */
+        alert( "I love HTML5!".match(/\s\w\w\w\w\d/) );
+        alert( "Z".match(/./) );
+
+        ///caret ^ and dollar $ == anchors
+        let strr1 = "Mary had a little lamb";
+        alert( /^Mary/.test(strr1) );
+        alert( /lamb$/.test(strr1) );
+
+        ////////////////////////
+        let st = `1st place: Winnie
+        2nd place: Piglet
+        3rd place: Eeyore`;
+
+        console.log( st.match(/^\d/g) );
+
+        ////////////////////////////
+        let st1 = `Winnie: 1
+        Piglet: 2
+        Eeyore: 3`;
+
+        console.log( st1.match(/\d\n/g) );
+
+
+        ///////////////////////////////
+        alert( "Hello, Java!".match(/\bJava\b/) ); 
+        alert( "Hello, JavaScript!".match(/\bJava\b/) );
+
+
+        /* d – is the same as [0-9],
+        \w – is the same as [a-zA-Z0-9_],
+        \s – is the same as [\t\n\v\f\r ], */
+
+        let str3 = "+7(903)-123-45-67";
+
+        alert( str3.match(/\d+/g) ); 
+
+        /* + -- Means “one or more”, the same as {1,}.
+        ? -- Means “zero or one”, the same as {0,1}
+        * -- Means “zero or more”, the same as {0,} */
+
+
+
+    </script>
+</body>
+</html>

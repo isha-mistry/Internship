@@ -1,0 +1,21 @@
+$myFont: Helvetica, sans-serif;
+$bgColor: lightblue;
+$textColor: darkblue;
+$fontSize: 18px;
+$margin: 20px;
+
+body {
+    font-family: $myFont;
+    background-color: $bgColor;
+    color: $textColor;
+    font-size: $fontSize;
+    margin: $margin;
+  }
+
+
+  @mixin important-text {
+    color: purple;
+    font-size: 20px;
+    font-weight: bold;
+    border: 1px solid blue;
+  }

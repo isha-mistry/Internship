@@ -1,0 +1,66 @@
+@import "reset";
+
+$bgColor: lightblue;
+$containerWidth: 500px; 
+$containerBorder: 2px solid black;
+
+/* Use the variables */
+
+#container{
+    $bgColor: pink !global;
+    background-color: $bgColor;
+    width: $containerWidth;
+    border: $containerBorder;
+}
+
+#para2{
+    background-color: $bgColor;
+    width: $containerWidth;
+}
+
+// styling for nav
+nav {
+    ul {
+      margin: 0px;
+      padding: 0;
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    a {
+      display: block;
+      padding: 6px 12px;
+      text-decoration: none;
+    }
+  }  
+
+
+// Styling for mixin using @extends
+
+#divMixin{
+    @include important-text;
+    color: brown;
+}
+
+// styling for button
+#button1 {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+#button2 {
+    @extend #button1;
+    background-color: red;
+}
+
+#button3 {
+@extend #button1;
+    background-color: green;
+    color: white;
+}
+  

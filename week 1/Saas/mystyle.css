@@ -1,0 +1,59 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: lightblue;
+  color: darkblue;
+  font-size: 18px;
+  margin: 20px;
+}
+
+/* Use the variables */
+#container {
+  background-color: pink;
+  width: 500px;
+  border: 2px solid black;
+}
+
+#para2 {
+  background-color: pink;
+  width: 500px;
+}
+
+nav ul {
+  margin: 0px;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+
+#divMixin {
+  color: purple;
+  font-size: 20px;
+  font-weight: bold;
+  border: 1px solid blue;
+  color: brown;
+}
+
+#button1, #button3, #button2 {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  margin: 30px;
+  cursor: pointer;
+}
+
+#button2 {
+  background-color: red;
+}
+
+#button3 {
+  background-color: green;
+  color: white;
+}/*# sourceMappingURL=mystyle.css.map */

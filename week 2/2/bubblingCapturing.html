@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <ul>
+            <li>code 1</li>
+            <li>code 2</li>
+        </ul>
+    </div>
+
+    <script>
+        const container = document.querySelector('.container');
+        /* const ul = document.querySelector('ul');
+        const li = document.querySelector('li');
+
+        li.addEventListener('click', () =>{ 
+            console.log("li clicked")
+        })
+
+        ul.addEventListener('click', () =>{ 
+            console.log("ul clicked")
+        }, {capture:true})
+
+        container.addEventListener('click', (event) =>{
+            event.stopPropagation(); 
+            console.log("container clicked")
+            }, {capture:true}) */
+
+        container.addEventListener('click', (event) =>{
+        console.log(event.target.textContent)
+        })
+
+    </script>
+</body>
+</html>

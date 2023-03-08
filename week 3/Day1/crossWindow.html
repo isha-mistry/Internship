@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <iframe src="/" id="iframe"></iframe>
+
+    <script>
+    iframe.onload = function() {
+        // just do anything
+        iframe.contentDocument.body.prepend("Hello, world!");
+    };
+    </script> -->
+
+    <iframe src="http://example.com" name="example">
+
+    <script>
+    let win = window.frames.example;
+
+    win.postMessage("message", "*");
+    </script>
+</body>
+</html>

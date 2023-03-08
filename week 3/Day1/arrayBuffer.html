@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array = new ArrayBuffer(16);
+        let view = new Uint32Array(array);
+
+        console.log(Uint32Array.BYTES_PER_ELEMENT);
+
+        console.log(view.byteLength);
+        console.log(view.length);
+
+        for(let num of view) {
+            alert(num); // 
+        }
+
+    </script>
+</body>
+</html>

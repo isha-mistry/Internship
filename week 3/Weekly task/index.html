@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-control" content="public">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api data</title>
+	<style>
+		#table {
+				font-family: Arial, Helvetica, sans-serif;
+				border-collapse: collapse;
+				width: 100%;
+		} 
+        #table td, #customers th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #table tr:nth-child(even){background-color: #f2f2f2;}
+
+        #table tr:hover {background-color: #ddd;}
+
+        #table th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: #1361c7;
+			color: white;
+        }   
+	</style>
+</head>
+<body>
+    <div>
+        <form id="searchForm">
+            <h1>Find User</h1>
+            <select id="selectedField" name="selectedField">
+                <option selected disabled>Select field</option>
+                <option id="fn">Firstname</option>
+                <option id="ln">Lastname</option>
+            </select><br><br>
+            <input type="text" id="search" placeholder="Enter the text to find" name="findText">
+            <input type="button" value="find" onclick="search_data()">
+        </form>    
+    </div>
+    <br><br>
+    <div id="div"></div>
+    <table border="1px" id="table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Image</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+            
+        </tbody>
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

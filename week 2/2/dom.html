@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+
+    </script>
+</head>
+<body class="body">
+    <div>Hello</div>
+    <p>hii</p>
+    <h1>good</h1>
+    
+    <div id="div">
+        <h3>1</h3>
+        <h3>2</h3>
+        <h3>3</h3>
+    </div>
+    <div id="span">hi</div>
+
+
+    <ol id="ol">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+    </ol>
+
+    <ul id="ul"></ul>
+
+    <script>
+        /********** childNode *********/
+        // let i=0;
+        // for(i=0; i <= document.body.childNodes.length; i++){
+        //     //alert(document.body.childNodes[i]);
+            
+        // }
+        // alert(document.body.childNodes[0]);
+        // alert(document.body.childNodes[document.body.childNodes.length -1]);
+
+        /* query Selector all */
+        // let elem = document.querySelectorAll('div > h3:lastChild');
+        // for(let el in elem){
+        //     //alert(el);
+        // }
+
+        /* ***************************** */
+        let span = document.getElementById("span");
+        span.style.backgroundColor = "blue";
+
+        /* ****************************** */
+        // let div = document.createElement('div');
+        // div.innerHTML("this is div");
+        // document.body.append(div);
+
+
+        ol.before('before'); 
+        ol.after('after'); 
+
+        let liFirst = document.createElement('li');
+        liFirst.innerHTML = 'prepend';
+        ol.prepend(liFirst); 
+
+        let liLast = document.createElement('li');
+        liLast.innerHTML = 'append';
+        ol.append(liLast); 
+                
+        document.body.classList.add('article');
+        alert(document.body.className);
+    </script>
+
+    
+</body>
+</html>

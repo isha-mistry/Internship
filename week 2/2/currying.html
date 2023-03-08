@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function curry(f){
+            return function(a){
+                return function(b){
+                    return f(a, b);
+                };
+            };
+        }
+
+        function currySum(a, b){
+            return a + b;
+        }
+
+        let curriedSum = curry(currySum);
+        alert(curriedSum(3)(8));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<script>
+    let eventSource = new EventSource("https://another-site.com/events");
+
+    eventSource.onmessage = function(event) {
+        console.log("New message", event.data);
+    };
+</script>
+    
